@@ -4,7 +4,7 @@ def find_contiguous(target, values):
         # make a rolling shutter and pop from beginning when sum gets too large
         curr.append(x)
         while(sum(curr) > target):
-            removed = curr.pop(0)
+            curr.pop(0)
         if sum(curr) == target:
             return curr
 
